@@ -1,0 +1,99 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+ion-card {
+  margin: 0 !important;
+}
+
+ion-toggle {
+  /* 
+  available custom properties variable
+  --border-radius
+  --handle-background
+  --track-background-checked
+  --handle-background-checked
+  --handle-border-radius
+  --handle-box-shadow
+  --handle-height
+  --handle-max-height
+  --handle-spacing
+  --handle-width
+  --track-background
+  */
+
+  --handle-background: #e8eaea;
+  --track-background-checked: #e52138;
+  --handle-background-checked: #e8eaea;
+  --handle-width: 20px;
+  --track-background: #7b8cad;
+}
+
+ion-toggle::part(track) {
+  width: 52px;
+  height: 24px;
+
+  /* Required for iOS handle to overflow the height of the track */
+  overflow: visible;
+}
+
+ion-toolbar {
+  --background: #fff;
+  --padding-bottom: 18px;
+  --padding-top: 18px;
+  --border-style: "none";
+  margin: 24px 0;
+}
+
+ion-header {
+  box-shadow: none !important;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.shadow-by-trello {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+ion-fab {
+  top: -33px;
+}
+
+ion-card {
+  z-index: 10;
+}
+
+ion-toolbar {
+  --padding-bottom: 1rem;
+  --padding-top: 1rem;
+}
+
+.label-text-wrapper {
+  margin-inline: 0 8px !important;
+}

@@ -1,0 +1,46 @@
+<ion-content class="ion-padding">
+  <div class="container">
+    <app-header-content-layout>
+      <div class="z-[999] text-center my-5 text-[#fff]">
+        <h1 class="text-[16px] m-0 font-semibold">Akun</h1>
+      </div>
+    </app-header-content-layout>
+    <ion-card class="rounded-[12px]">
+      <ion-card-content>
+        <div class="flex justify-between">
+          <div class="flex">
+            <div
+              class="h-[80px] w-[80px] bg-black rounded-full mr-3 bg-pink-200 overflow-hidden"
+            >
+              <img src="assets/avatar_sample_2.svg" alt="avatar" />
+            </div>
+            <div class="text-start my-auto">
+              <strong class="text-[16px] text-black m-0">
+                {{ user.name }}
+              </strong>
+              <p class="text-[12px] text-black m-0">{{ user.phoneNumber }}</p>
+              <p class="text-[12px] text-black m-0">{{ user.email }}</p>
+            </div>
+          </div>
+          <button class="text-[#E52138] text-[12px] font-semibold">Ubah</button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ul class="mt-5">
+      <li *ngFor="let item of menus">
+        <button class="flex justify-between py-5 w-full">
+          <div class="flex gap-2 items-center">
+            <ion-icon class="text-[16px]" [name]="item.icon"></ion-icon>
+            <p class="text-[14px]">{{ item.label }}</p>
+          </div>
+          <div>
+            <ion-icon
+              class="text-[18px]"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </div>
+        </button>
+      </li>
+    </ul>
+  </div>
+</ion-content>

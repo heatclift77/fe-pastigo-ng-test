@@ -1,0 +1,17 @@
+<ion-header class="bg-[#fff]">
+  <ul
+    class="flex w-full justify-between border-b-2 border-red-100 overflow-hidden"
+  >
+    <li
+      class="px-3 py-2 relative font-semibold"
+      [ngClass]="item.active ? 'text-black': 'text-[#667085]'"
+      *ngFor="let item of tabMenu"
+    >
+      <button (click)="onClick(item)">{{ item.label }}</button>
+      <div
+        class="w-full bg-[#E52138] h-[20px] rounded-[3px] absolute left-0 bottom-[-17px]"
+        *ngIf="item.active"
+      ></div>
+    </li>
+  </ul>
+</ion-header>

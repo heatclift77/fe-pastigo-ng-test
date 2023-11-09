@@ -1,0 +1,23 @@
+<ion-footer>
+  <div class="shadow-by-trello">
+    <ul class="grid grid-cols-5">
+      <li *ngFor="let item of data" class="p-3">
+        <button *ngIf="!item.floating" (click)="onClick(item)" class="w-full flex justify-center items-center">
+          <div>
+            <ion-icon [class]="item.active ? activeStyleIcon: inActiveStyleIcon" [name]="item.icon"></ion-icon>
+            <p [class]="item.active ? activeStyleText: inActiveStyleText">{{ item.label }}</p>
+          </div>
+        </button>
+        <ion-fab vertical="center" horizontal="center" slot="fixed" *ngIf="item.floating">
+          <ion-fab-button color="primary">
+            <ion-icon
+              class="text-[32px]"
+              src="assets/icon/floating-icon.svg"
+            ></ion-icon>
+          </ion-fab-button>
+          <p class="text-[10px] text-[#98A2B3] mt-1">Paket Anda</p>
+        </ion-fab>
+      </li>
+    </ul>
+  </div>
+</ion-footer>
