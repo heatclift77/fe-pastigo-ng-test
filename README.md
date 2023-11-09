@@ -17,7 +17,7 @@ slicing 3 halaman sebagai berikut ;
 # kendala
 1. pengerjaan custom header yg lumayan susah karena aset terpecah pecah;
    ![image](https://github.com/heatclift77/fe-pastigo-ng-test/assets/73774501/2b78924f-c39a-442d-8216-602ea549fc07)
-   header seperti yang terlampir lebih mudah dikerjakan dengan satu asset utuh, konsistensi di setiap lebar layar susah untuk diatur dalam waktu pendek.
+   header seperti yang terlampir lebih mudah dikerjakan dengan satu asset utuh, aset terpisah menyulitkan dalam proses slicengh dan konsistensi di setiap lebar layar susah untuk diatur dalam waktu pendek.
 2. beberapa aset rusak tidak bisa diunduh seperti icon berikut;
    ![image](https://github.com/heatclift77/fe-pastigo-ng-test/assets/73774501/12359140-ce2c-4cdc-bdc4-315868818f0b)
    di karenakan satu icon aset pada bottom nav tidak dapat diunduh maka saya memutuskan menggunakan aset dari ionic demi keselarasan
